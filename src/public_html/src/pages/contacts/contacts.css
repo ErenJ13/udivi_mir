@@ -1,0 +1,243 @@
+body {
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+
+}
+
+.header {
+    grid-area: hd;
+    margin-left: 20px;
+}
+
+.container>header>ul>li>a {
+
+    margin-top: 20px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.logo {
+    width: 69px;
+    height: 69px;
+    margin-left: 0px;
+    top: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns:  1fr;
+
+
+}
+.map
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    margin-left: 100px;
+
+}
+.map>div>p>a{
+    color: #000000;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.map>div>h3{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+.map>div>p>a:hover{
+    color: #ff8400;
+    text-decoration: none;
+}
+
+main>.top_cont {
+    background-image:  url(/src/assets/images/Group19.png),  url(/src/assets/images/pin1.png) ,url(/src/assets/images/top.png);
+    background-repeat: no-repeat;
+
+    background-position: 10% 75%, 90% 10%;
+    position: relative;
+
+    width: 1440px;
+    height: 929.44px;
+
+}
+
+
+
+.top_cont>h1 {
+    
+    margin-top: 300px;
+    justify-content:center;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.detclub_cont {
+    color: #000000;
+   
+
+}
+
+.um {
+    color: #FF9D00;
+   
+
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 250px;
+ background-color: #00095F;
+margin-top: 100px;
+}
+.footer>div>ul>li>a{
+margin-top: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+.footer>div>ul>li> a:hover{
+    color: coral;
+}
+.footer>.contacts{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.footer>.contacts>h5
+{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+.link{
+    margin-top: 50px;
+}
+
+.map > p > a{
+    padding-top: 50px;
+    margin-left: 100px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.map > p > a:hover {
+    
+    color: rgb(21, 0, 255);  
+    
+   }
+
+   @media screen and (max-width: 900px) {
+
+
+    body {
+     
+    max-width: 50%;
+    }
+    
+    .header {
+ 
+        margin-left: 10px;
+        max-width: 20%;
+    }
+    .container{
+        display: flex;
+        
+        justify-content:left;
+    }
+    .container>header>ul>li>a {
+    
+        margin-top: 20px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 19px;
+    margin-left: 5px;
+        color: #000000;
+    }
+    
+    .logo {
+        width: 69px;
+        height: 69px;
+        margin-left: 10px;
+        top: 0px;
+    }
+    
+    main {
+        max-width: 50%;
+    
+    }
+    
+    
+    .footer{
+        max-width: 83%;
+        margin-top: 1200px;
+    }
+  
+    
+    
+    .top_cont{
+        background-image: url(/src/assets/images/top.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        position: relative;
+    
+        max-width: 82%;
+        height: 929.44px;
+    }
+    
+
+
+
+      .map
+      {
+          display: grid;
+          grid-template-columns: 500px 1fr;
+          justify-content:space-around;
+          margin-left: 50px;
+      
+      }
+ 
+}

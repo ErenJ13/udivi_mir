@@ -1,0 +1,433 @@
+body {
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+    max-width: 100%;
+}
+
+/* header */
+
+.header {
+    max-width: 100%;
+    grid-area: hd;
+    margin-left: 20px;
+}
+
+.container {
+
+    max-width: 100%;
+
+}
+
+.container>header>ul>li>a {
+
+    margin-top: 20px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.logo {
+    width: 69px;
+    height: 69px;
+    margin-left: 0px;
+    top: 0px;
+}
+
+/* header */
+
+
+/* главная */
+
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, fr);
+
+}
+
+
+
+.top_baby>h1 {
+
+    margin-top: 200px;
+    justify-content: center;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+main>.top_baby {
+    background-image: url(/src/assets/images/Boy.svg), url(/src/assets/images/child_girl.svg), url(/src/assets/images/top.png);
+    background-repeat: no-repeat;
+    background-position: 10% 45%, 90% 5%, top;
+    background-size: 100px, 100px, 4000px 1000px;
+    position: relative;
+    max-width: 4000px;
+    height: 929.44px;
+
+
+}
+
+/* главная */
+
+/* направления */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-top: 100px;
+
+}
+
+.about_us1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-top: 100px;
+
+}
+
+.about>h2 {
+
+    width: 100%;
+    height: 83px;
+    padding-top: 50px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.about>.about_us>p {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: right;
+    color: #000000;
+}
+
+.about>.about_us>.img2 {
+    width: 547px;
+    height: 673px;
+    left: 93px;
+    top: 1262px
+}
+
+.about>.about_text {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+
+}
+
+.about>.about_text>.btn {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+
+.about>.about_us1>p {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: left;
+
+    color: #000000;
+}
+
+.about>.about_us1>.img1 {
+    width: 547px;
+    height: 673px;
+    right: 93px;
+    top: 1262px
+}
+
+.about>.about_text1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+
+}
+
+.about>.about_text1>.btn {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+/* направления */
+
+/* footer */
+
+.vk {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 290px;
+    background-color: #00095F;
+    margin-top: 100px;
+}
+
+.footer>div>ul>li>a {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer>div>ul>li>a:hover {
+    color: coral;
+}
+
+.footer>.contacts {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer>.contacts>h5 {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+.link {
+    margin-top: 50px;
+}
+
+/* footer */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .container>header>ul>li>a {
+
+        margin-left: 2px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+
+        color: #000000;
+    }
+
+    .logo {
+        width: 49px;
+        height: 49px;
+        margin-left: 0px;
+        top: 0px;
+    }
+
+
+
+    main>.top_baby {
+        background-image: url(/src/assets/images/Boy.svg), url(/src/assets/images/child_girl.svg), url(/src/assets/images/top.png);
+
+        background-position: 10% 55%, 90% 5%;
+        background-size: 100px, 100px, 4000px 1000px;
+        position: relative;
+        max-width: 900px;
+
+        height: 929.44px;
+
+    }
+
+    .top_baby>h1 {
+        
+        padding: 5px;
+        max-width: 100%;
+        font-weight: 600;
+        font-size: 45px;
+        justify-content: center;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+
+    }
+
+    .about_us {
+
+        
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    .about_us1 {
+
+      
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    .about>h2 {
+
+        max-width: 900px;
+        height: 83px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 64px;
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .about>.about_us>p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .about>.about_us>.img2 {
+       
+        width: 350px;
+        height: 500px;
+
+    }
+
+    .about>.about_us1>p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .about>.about_us1>.img1 {
+        
+        width: 350px;
+        height: 500px;
+
+    }
+
+
+
+
+
+    .footer {
+
+
+        background-color: #00095F;
+
+    }
+
+    .footer>div>ul>li>a {
+        margin-top: 5px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    .footer>div>ul>li>a:hover {
+        color: coral;
+    }
+
+    .footer>.contacts {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .footer>.contacts>h5 {
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 42px;
+
+        color: #FFFFFF;
+    }
+
+    .link {
+        margin-top: 50px;
+    }
+
+}
